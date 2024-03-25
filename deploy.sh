@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build React frontend
-cd frontend
-npm install && npm run build
+cd frontend/website
+npm install && npm start
 
 # Start Flask backend
-cd ../backend
+cd ../../backend
 python app.py
