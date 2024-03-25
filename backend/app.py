@@ -39,7 +39,7 @@ my_password = "ldjacsjrbaewfgla"
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://postgres:{'Zora123'}@localhost/furniture"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgres://furnituredb_bw2d_user:htC7Ndnn4gg6FWUF63DtDIWudVkdAPx1@dpg-co0ihagl6cac73coc240-a.oregon-postgres.render.com/furnituredb_bw2d"
 
 app.config.update(SESSION_COOKIE_SAMESITE="None", SESSION_COOKIE_SECURE=True)
 app.config['SECRET_KEY'] = "my_secret_key_ig"
