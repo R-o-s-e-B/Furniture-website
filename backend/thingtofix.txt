@@ -1,0 +1,12 @@
+the database, make sure to remove username requirement from all inputs;
+
+client-id: 103595653306-rbb96utet96pjkvvlgc3vvo7jocfea7b.apps.googleusercontent.com
+clietn-secret: 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
+
+make sure to change the product image_url to images consisting of an array of urls and update it with slider in main 
+add a rating column to the db for product
+add item bought count to product table
+
+change address box to an array
+link categories
+add about page

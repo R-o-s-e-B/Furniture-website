@@ -1,0 +1,43 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+psycopg2 = "*"
+python-dotenv = "*"
+flask-cors = "*"
+flask-ckeditor = "*"
+certifi = "*"
+chardet = "*"
+click = "*"
+dominate = "*"
+gunicorn = "*"
+flask-bootstrap = "*"
+flask-gravatar = "*"
+flask-login = "*"
+flask-wtf = "*"
+idna = "*"
+itsdangerous = "*"
+jinja2 = "*"
+markupsafe = "*"
+sqlalchemy = "*"
+urllib3 = "*"
+visitor = "*"
+werkzeug = "*"
+wtforms = "*"
+requests = "*"
+setuptools = "*"
+stripe = "*"
+bcrypt = "*"
+flask-dance = "*"
+google-auth-oauthlib = "*"
+redis = "*"
+flask-session = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
