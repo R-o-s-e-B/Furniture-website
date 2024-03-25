@@ -26,6 +26,7 @@ setuptools
 stripe 
 Flask-Dance
 pyotp
+psycopg2
 google
 google_auth_oauthlib
 datetime
