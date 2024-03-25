@@ -1,4 +1,5 @@
 Flask-CKEditor
+Flask_Bcrypt
 certifi
 chardet
 click
