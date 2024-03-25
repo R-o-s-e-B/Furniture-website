@@ -22,5 +22,4 @@ WTForms
 requests
 setuptools
 stripe 
-smtplib
 Flask-Dance
