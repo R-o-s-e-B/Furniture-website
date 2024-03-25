@@ -1,4 +1,5 @@
 Flask-CKEditor
+Flask_Cors
 Flask_Bcrypt
 certifi
 chardet
@@ -25,3 +26,7 @@ setuptools
 stripe 
 Flask-Dance
 pyotp
+google
+google_auth_oauthlib
+datetime
+smtplib
