@@ -17,8 +17,8 @@ import time
 
 
 stripe_keys = {
-    "secret_key": "sk_test_51NJVpSSFpxiZ4LwaVAZ2B78eR4zcTloarIfPpZyCsOATjl07vRJ9gccbDp9fh7XuBF7N755DnbxfqXmw4QhoYSBA00vPMZKfVM",
-    "publishable_key": "pk_test_51NJVpSSFpxiZ4LwaEkFCrzZUK5QnV0BnPyZWbFikuyZSQgF7cKMmIRO0Fs8Nv0P15tenpLgORJPg1oO96UUQBxh8006pudQNTr",
+    "secret_key": os.environ.get("STRIPE_SECRET_KEY"),
+    "publishable_key": os.environ.get("PUBLISHABLE_KEY"),
 }
 
 stripe.api_key = stripe_keys["secret_key"]
@@ -33,8 +33,8 @@ def generate_otp():
 
 
 # secret_key = '\x03JH\xba\x0f\xf1\xe4\xc0\x86\xd7\xc8\xdd\xdb\x13\xd1Z[+\x10\xd5/{n\xd7'
-my_email = "Rosebobbyofficial@gmail.com"
-my_password = "ldjacsjrbaewfgla"
+my_email = "MY_EMAIL"
+my_password = "MY_PASSWORD"
 
 app = Flask(__name__)
 
@@ -48,9 +48,9 @@ app.config['SECRET_KEY'] = "my_secret_key_ig"
 db = SQLAlchemy(app)
 CORS(app, supports_credentials=True, origins=['http://localhost:3000'])
 
-stripe.api_key = "sk_test_tR3PYbcVNZZ796tH88S4VQ2u"
+stripe.api_key = os.environ.get("STRIPE_API_KEY")
 
-GOOGLE_CLIENT_ID = "103595653306-rbb96utet96pjkvvlgc3vvo7jocfea7b.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
 
 flow = Flow.from_client_secrets_file(client_secrets_file="client_secret.json",
                                      scopes=["https://www.googleapis.com/auth/userinfo.profile",
